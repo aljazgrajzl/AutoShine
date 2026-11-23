@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=25mm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=blue}
+\setlength{\parskip}{7pt}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{3cm}
+{\Huge\bfseries AutoShine\par}
+\vspace{0.7cm}
+{\LARGE Pregled obstoječih rešitev\par}
+\vspace{1.5cm}
+{\large Primerjava spletnih strani in storitev avtopralnic\par}
+\vfill
+\begin{flushleft}\large
+\textbf{Člana skupine:}\\
+David Lazić\\
+Aljaž Grajžl\\[0.6cm]
+\textbf{Datum:} 23. november 2026
+\end{flushleft}
+\end{titlepage}
+\tableofcontents
+\newpage
+\section{Uvod}
+AutoShine je skupinski projekt spletne rešitve za predstavitev storitev avtopralnice. Namen je uporabniku omogočiti, da na enem mestu hitro najde ponudbo, opise storitev, cenik in kontaktne podatke. Pomembna funkcionalnost spletne strani bo tudi obrazec za povpraševanje po terminu. Obiskovalec bo lahko izbral želeno storitev, navedel želeni datum in uro ter posredoval kontaktne podatke. Oddaja obrazca ne bo pomenila samodejne potrditve rezervacije; ponudnik bo termin naknadno uskladil in potrdil.
+
+Problem, ki ga želimo nasloviti, je nepregledna predstavitev ponudbe: obiskovalec pogosto potrebuje več korakov, da ugotovi, kaj vključuje posamezna storitev, koliko stane in kako stopiti v stik s ponudnikom. Zato smo pregledali tri obstoječe spletne rešitve: CarWash Studenci, Avtostop in Avtokozmetika KIKA.
+
+\section{CarWash Studenci}
+\subsection{Opis in ključne funkcionalnosti}
+CarWash Studenci predstavlja avtomatsko in ročno pranje ter notranje in globinsko čiščenje vozil. Spletna stran vključuje ponudbo, cenike, kontaktne podatke, lokacijo in stran za rezervacijo določenih storitev \cite{studenci,studenci_rez}.
+\begin{itemize}[nosep]
+\item Pregled storitev in različnih načinov čiščenja.
+\item Ceniki glede na vrsto storitve oziroma velikost vozila.
+\item Rezervacija termina za izbrane storitve čiščenja.
+\item Kontaktni podatki, lokacija in odgovori na pogosta vprašanja.
+\end{itemize}
+\subsection{Prednosti in slabosti}
+\textbf{Prednosti:} jasno vidna možnost rezervacije; razdelitev storitev v kategorije; objavljene izhodiščne cene.\\
+\textbf{Slabosti (naša ocena):} velika količina vsebine lahko oteži hitro primerjavo; uporabnik mora za podrobnosti odpreti več podstrani.
+\begin{figure}[H]\centering\includegraphics[width=0.92\textwidth]{slike/carwash_studenci.png}\caption{Začetna stran CarWash Studenci (posnetek zaslona, 23. 11. 2026).}\end{figure}
+
+\section{Avtostop}
+\subsection{Opis in ključne funkcionalnosti}
+Avtostop na strani avtomatske avtopralnice v Mariboru predstavlja štiri programe pranja: bronasti, zlati, diamantni in platinasti. Za vsak program so navedeni cena in vključeni postopki; objavljeni so tudi doplačila, lokacija in delovni čas \cite{avtostop}.
+\begin{itemize}[nosep]
+\item Primerjava štirih programov avtomatskega pranja.
+\item Seznam postopkov, ki jih vključuje posamezni program.
+\item Cenik dodatnih storitev.
+\item Informacije o lokaciji, kontaktu in odpiralnem času.
+\end{itemize}
+\subsection{Prednosti in slabosti}
+\textbf{Prednosti:} strukturirani paketi; jasno navedene cene in vključene storitve; uporabnik lahko primerja možnosti.\\
+\textbf{Slabosti (naša ocena):} spletna stran pokriva tudi druge dejavnosti avtocentra, zato je navigacija obsežnejša; na obravnavani strani ni posebej izpostavljen enostaven rezervacijski koledar za to lokacijo.
+\begin{figure}[H]\centering\includegraphics[width=0.92\textwidth]{slike/avtostop.png}\caption{Stran avtomatske avtopralnice Avtostop Maribor (posnetek zaslona, 23. 11. 2026).}\end{figure}
+
+\section{Avtokozmetika KIKA}
+\subsection{Opis in ključne funkcionalnosti}
+Avtokozmetika KIKA se na začetni strani predstavlja kot ponudnik mobilne avtokozmetike v Mariboru in okolici. Na posnetku zaslona so vidni razdelki Storitve, Paketi, Kako deluje in Kontakt ter pozivi za rezervacijo termina, telefonski klic in sporočilo prek WhatsAppa \cite{kika}.
+\begin{itemize}[nosep]
+\item Navigacija do storitev in paketov.
+\item Izpostavljena možnost dogovora za termin.
+\item Hitre možnosti za vzpostavitev stika po telefonu in prek WhatsAppa.
+\item Predstavitev mobilne storitve in območja izvajanja.
+\end{itemize}
+\subsection{Prednosti in slabosti}
+\textbf{Prednosti:} izraziti gumbi za naslednji korak; sodobna, pregledna začetna stran; jasno izpostavljena mobilna storitev.\\
+\textbf{Slabosti (naša ocena):} več različnih kontaktnih gumbov lahko uporabnika zmede; na prikazanem začetnem delu strani ni neposredno vidne celotne primerjave cen paketov.
+\begin{figure}[H]\centering\includegraphics[width=0.92\textwidth]{slike/avtokozmetika_kika.png}\caption{Začetna stran Avtokozmetika KIKA (posnetek zaslona, 23. 11. 2026).}\end{figure}
+
+\section{Primerjava in zaključek}
+Pregledane rešitve prikazujejo tri koristne pristope. CarWash Studenci poudarja pregled storitev in rezervacijo, Avtostop primerljive pakete s cenami, Avtokozmetika KIKA pa jasne pozive k dejanju in hiter kontakt.
+
+V projektu AutoShine želimo prevzeti pregledno razvrstitev storitev, razumljiv cenik, preprosto navigacijo in dobro vidne kontaktne podatke. Posebej bomo pazili, da uporabnik do bistvenih informacij pride z malo kliki. Načrtovana prednost AutoShine bo enotna in preprosta predstavitev ponudbe, brez nepotrebnih dodatnih razdelkov. AutoShine bo omogočal tudi oddajo povpraševanja za termin prek preprostega spletnega obrazca. Uporabnik bo navedel želeno storitev, predlagani datum in uro ter svoje kontaktne podatke. Za razliko od sistema neposrednih rezervacij spletna stran ne bo prikazovala prostih terminov ali samodejno potrjevala rezervacij. Termin bo ponudnik potrdil naknadno, po dogovoru z uporabnikom.
+
+Prednosti in slabosti v dokumentu predstavljajo našo oceno uporabniške izkušnje na podlagi pregledanih strani, ne pa rezultate formalnega uporabniškega testiranja.
+
+\begin{thebibliography}{9}
+\bibitem{studenci} CarWash Studenci. \emph{Avtopralnica CarWash Studenci}. \url{https://avtopralnica-maribor.si/}. Dostopano 23. 11. 2026.
+\bibitem{studenci_rez} CarWash Studenci. \emph{Rezervacije}. \url{https://avtopralnica-maribor.si/rezervacije/}. Dostopano 23. 11. 2026.
+\bibitem{avtostop} Avtostop. \emph{Avtomatska avtopralnica Maribor}. \url{https://avtostop.si/avtopralnica/avtopralnica-maribor/}. Dostopano 23. 11. 2026.
+\bibitem{kika} Avtokozmetika KIKA. \emph{Uradna spletna stran}. \url{https://avtokozmetika-kika.si/}. Dostopano 23. 11. 2026.
+\end{thebibliography}
+\end{document}
